@@ -13,7 +13,7 @@ function App() {
 
   if (error) return <p>Failed to load.</p>;
   if (isLoading) return <p>Loading...</p>;
-  return <>{status.code === 200 && <p>Status : {status.description}</p>}</>;
+  return <>{status && <p>Status : {status.description}</p>}</>;
 }
 
 export default App;
